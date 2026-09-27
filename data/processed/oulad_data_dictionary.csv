@@ -1,0 +1,44 @@
+﻿table,column,data_type,key_role,null_count,null_percent,unique_values,description
+courses,code_module,str,PK (composite),0,0.0,7,Mã định danh của module (môn học).
+courses,code_presentation,str,PK (composite),0,0.0,4,Mã định danh của lần tổ chức module.
+courses,module_presentation_length,int64,,0,0.0,7,"Thời lượng của lần tổ chức module, tính theo ngày."
+assessments,code_module,str,FK (composite),0,0.0,7,Mã module chứa bài đánh giá.
+assessments,code_presentation,str,FK (composite),0,0.0,4,Mã lần tổ chức module chứa bài đánh giá.
+assessments,id_assessment,int64,PK,0,0.0,206,Mã định danh của bài đánh giá.
+assessments,assessment_type,str,,0,0.0,3,"Loại bài đánh giá, ví dụ TMA, CMA hoặc Exam."
+assessments,date,float64,,11,5.34,74,"Ngày kết thúc hoặc hạn của bài đánh giá, tính tương đối từ ngày bắt đầu module."
+assessments,weight,float64,,0,0.0,24,Trọng số của bài đánh giá trong kết quả của module.
+vle,id_site,int64,PK,0,0.0,6364,Mã định danh của tài nguyên hoặc hoạt động trên VLE.
+vle,code_module,str,FK (composite),0,0.0,7,Mã module mà tài nguyên VLE thuộc về.
+vle,code_presentation,str,FK (composite),0,0.0,4,Mã lần tổ chức module mà tài nguyên VLE thuộc về.
+vle,activity_type,str,,0,0.0,20,Loại hoạt động hoặc tài nguyên trên VLE.
+vle,week_from,float64,,5243,82.39,30,Tuần bắt đầu sử dụng hoặc hiển thị tài nguyên.
+vle,week_to,float64,,5243,82.39,30,Tuần kết thúc sử dụng hoặc hiển thị tài nguyên.
+studentInfo,code_module,str,PK/FK (composite),0,0.0,7,Mã module mà sinh viên theo học.
+studentInfo,code_presentation,str,PK/FK (composite),0,0.0,4,Mã lần tổ chức module mà sinh viên theo học.
+studentInfo,id_student,int64,PK (composite),0,0.0,28785,Mã định danh của sinh viên.
+studentInfo,gender,str,,0,0.0,2,Giới tính của sinh viên.
+studentInfo,region,str,,0,0.0,13,Khu vực địa lý nơi sinh viên sinh sống.
+studentInfo,highest_education,str,,0,0.0,5,Trình độ học vấn cao nhất của sinh viên trước khi học module.
+studentInfo,imd_band,str,,1111,3.41,10,Nhóm chỉ số Index of Multiple Deprivation của khu vực sinh viên.
+studentInfo,age_band,str,,0,0.0,3,Nhóm tuổi của sinh viên.
+studentInfo,num_of_prev_attempts,int64,,0,0.0,7,Số lần trước đó sinh viên đã thử học module.
+studentInfo,studied_credits,int64,,0,0.0,61,Tổng số tín chỉ mà sinh viên đang học.
+studentInfo,disability,str,,0,0.0,2,Cho biết sinh viên có khai báo khuyết tật hay không.
+studentInfo,final_result,str,,0,0.0,4,Kết quả cuối cùng của sinh viên trong module.
+studentRegistration,code_module,str,PK/FK (composite),0,0.0,7,Mã module mà sinh viên đăng ký.
+studentRegistration,code_presentation,str,PK/FK (composite),0,0.0,4,Mã lần tổ chức module mà sinh viên đăng ký.
+studentRegistration,id_student,int64,PK/FK (composite),0,0.0,28785,Mã định danh của sinh viên.
+studentRegistration,date_registration,float64,,45,0.14,332,"Ngày sinh viên đăng ký module, tính tương đối từ ngày bắt đầu module."
+studentRegistration,date_unregistration,float64,,22521,69.1,416,Ngày sinh viên hủy đăng ký module; để trống nếu không hủy.
+studentAssessment,id_assessment,int64,PK/FK (composite),0,0.0,188,Mã bài đánh giá mà sinh viên thực hiện.
+studentAssessment,id_student,int64,PK (composite),0,0.0,23369,Mã định danh của sinh viên.
+studentAssessment,date_submitted,int64,,0,0.0,312,"Ngày sinh viên nộp bài, tính tương đối từ ngày bắt đầu module."
+studentAssessment,is_banked,int64,,0,0.0,2,Cho biết kết quả đánh giá có được chuyển/bảo lưu từ lần học trước hay không.
+studentAssessment,score,float64,,173,0.1,101,Điểm số của sinh viên cho bài đánh giá.
+studentVle,code_module,str,FK (composite),0,0.0,7,Mã module liên quan đến tương tác VLE.
+studentVle,code_presentation,str,FK (composite),0,0.0,4,Mã lần tổ chức module liên quan đến tương tác VLE.
+studentVle,id_student,int64,FK (composite),0,0.0,26074,Mã định danh của sinh viên thực hiện tương tác.
+studentVle,id_site,int64,FK,0,0.0,6268,Mã tài nguyên hoặc hoạt động VLE được tương tác.
+studentVle,date,int64,,0,0.0,295,"Ngày xảy ra tương tác, tính tương đối từ ngày bắt đầu module."
+studentVle,sum_click,int64,,0,0.0,498,Tổng số lượt click/tương tác được ghi nhận.

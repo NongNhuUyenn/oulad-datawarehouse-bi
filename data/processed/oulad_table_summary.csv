@@ -1,0 +1,8 @@
+﻿table,file,rows,columns,size_mb,total_null,description
+courses,courses.csv,22,3,0.0,0,Thông tin về các module và các lần tổ chức module.
+assessments,assessments.csv,206,6,0.01,11,Thông tin về các bài đánh giá được sử dụng trong từng module.
+vle,vle.csv,6364,6,0.25,10486,Thông tin về các tài nguyên và hoạt động trên môi trường học tập trực tuyến VLE.
+studentInfo,studentInfo.csv,32593,12,3.3,1111,"Thông tin nhân khẩu học, thông tin học tập và kết quả cuối cùng của sinh viên."
+studentRegistration,studentRegistration.csv,32593,5,1.06,22566,Thông tin đăng ký và hủy đăng ký module của sinh viên.
+studentAssessment,studentAssessment.csv,173912,5,5.43,173,Thông tin bài nộp và kết quả đánh giá của sinh viên.
+studentVle,studentVle.csv,10655280,6,432.81,0,Nhật ký tương tác của sinh viên với các tài nguyên và hoạt động trên VLE.

@@ -1,0 +1,40 @@
+# ============================================================
+# OULAD raw dataset
+# Raw data is excluded because the dataset contains large files.
+# ============================================================
+
+data/raw/
+anonymiseddata/
+
+# Original CSV files located in the project root
+/assessments.csv
+/courses.csv
+/studentAssessment.csv
+/studentInfo.csv
+/studentRegistration.csv
+/studentVle.csv
+/vle.csv
+
+# Downloaded archives
+*.zip
+*.7z
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log

@@ -1,0 +1,8 @@
+file,rows,columns,size_mb,total_null
+courses.csv,22,3,0.0,0
+assessments.csv,206,6,0.01,11
+vle.csv,6364,6,0.25,10486
+studentInfo.csv,32593,12,3.3,1111
+studentRegistration.csv,32593,5,1.06,22566
+studentAssessment.csv,173912,5,5.43,173
+studentVle.csv,10655280,6,432.81,0
