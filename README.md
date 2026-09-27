@@ -24,6 +24,12 @@ The main business problem selected for this project is:
 > **Analyzing and identifying factors associated with students withdrawing from a course.**
 
 ---
+## Project Documentation
+
+The detailed report covers the OULAD dataset exploration, data profiling, relational schema, business problem, and analytical requirements.
+
+[View the OULAD Data Analysis and Business Problem Report](docs/report/OULAD_Data_Analysis_and_Business_Problem.docx)
+---
 
 ## Dataset
 
