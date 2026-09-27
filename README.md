@@ -133,8 +133,13 @@ For example, a missing `date_unregistration` can indicate that the student did n
 ---
 
 ## Relational Schema
-
 The relationships between the seven OULAD source tables were analyzed and validated against the actual CSV data.
+
+### OULAD Source Relational Schema
+
+The following relational schema represents the relationships identified and validated across the seven OULAD source tables.
+
+![OULAD Relational Schema](docs/diagrams/oulad_relational_schema.png)
 
 The main relationships identified are:
 
